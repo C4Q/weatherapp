@@ -34,7 +34,7 @@ Please work through these tasks, completing as many as you can in the allotted t
 
 1. Write code to retrieve the weather forecast with an HTTP GET request, and parse the JSON response it returns.
 
-1. Write an app that shows forecasted low and high temperatures for each day in the forecast. Note the a single API call will retrieve all of this information.
+1. Write an app that shows forecasted low and high temperatures for each day in the forecast. Note that a single API call will retrieve all of this information.
 
 1. Create a GitHub repo and commit your app to it.
 
