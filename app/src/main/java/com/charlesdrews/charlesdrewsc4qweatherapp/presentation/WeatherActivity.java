@@ -1,18 +1,27 @@
-package com.charlesdrews.charlesdrewsc4qweatherapp;
+package com.charlesdrews.charlesdrewsc4qweatherapp.presentation;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+import com.charlesdrews.charlesdrewsc4qweatherapp.R;
+import com.charlesdrews.charlesdrewsc4qweatherapp.data.ForecastDay;
+
+import java.util.List;
+
+public class WeatherActivity extends AppCompatActivity {
+    private static final String TAG = "WeatherActivity";
+
+    private WeatherViewModel weatherViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +39,16 @@ public class MainActivity extends AppCompatActivity {
         }
         imageView.setImageDrawable(drawable);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        // Test ViewModel
+        weatherViewModel = ViewModelProviders.of(this, new WeatherViewModel.Factory())
+                .get(WeatherViewModel.class);
+
+        weatherViewModel.getForecast().observe(this, new Observer<List<ForecastDay>>() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onChanged(@Nullable List<ForecastDay> forecastDays) {
+                for (ForecastDay forecastDay : forecastDays) {
+                    Log.d(TAG, "onChanged: " + forecastDay.getDate().toString());
+                }
             }
         });
     }
