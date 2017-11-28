@@ -31,7 +31,7 @@ public class AerisJsonToJavaConverter {
                 aerisPeriod.getMaxTempF(),
                 aerisPeriod.getMinTempC(),
                 aerisPeriod.getMaxTempC(),
-                aerisPeriod.getIcon()
+                aerisPeriod.getIcon().substring(0, aerisPeriod.getIcon().indexOf('.'))
         );
     }
 }
