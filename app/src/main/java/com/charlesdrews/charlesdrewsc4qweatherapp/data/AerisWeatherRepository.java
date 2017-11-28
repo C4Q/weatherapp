@@ -57,7 +57,6 @@ public class AerisWeatherRepository implements WeatherRepository {
         call.enqueue(new Callback<AerisRoot>() {
             @Override
             public void onResponse(Call<AerisRoot> call, Response<AerisRoot> response) {
-                Log.d(TAG, "onResponse: " + call.request().url().toString());
                 if (response.isSuccessful()) {
                     AerisRoot aerisRoot = response.body();
 

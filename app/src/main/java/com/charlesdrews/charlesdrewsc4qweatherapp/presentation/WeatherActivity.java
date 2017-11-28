@@ -47,9 +47,6 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<ForecastDay> forecastDays) {
                 if (forecastDays != null) {
-                    for (ForecastDay forecastDay : forecastDays) {
-                        Log.d(TAG, "onChanged: " + forecastDay.getDate().toString());
-                    }
                     adapter.updateForecast(forecastDays);
                 }
             }
