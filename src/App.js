@@ -30,17 +30,16 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.days);
-    let thisWeek = <Button size='mini' onClick={this.handleNext} name='this'>This Week</Button>
-    let nextWeek = <Button size='mini' onClick={this.handleNext} name='next'>Next 7 Days</Button>
+    let thisWeek = <Button size='tiny' onClick={this.handleNext} name='this'>Back to This Week</Button>
+    let nextWeek = <Button size='tiny' onClick={this.handleNext} name='next'>Next 7 Days</Button>
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to Your Weather App</h1>
+          <h1 className="App-title">Welcome to The Weather App</h1>
           <img src={'sun.png'} className="App-logo" alt="logo" />
         </header>
-        {this.state.next ? thisWeek : nextWeek }
         <DaysContainer days={this.state.days}/>
+        {this.state.next ? thisWeek : nextWeek }
       </div>
     );
   }

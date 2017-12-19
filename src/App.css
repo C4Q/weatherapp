@@ -18,8 +18,9 @@
 }
 
 .App-title {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Lobster', cursive;
+   text-shadow: -1px 0 white;
 }
 
 .App-intro {
@@ -54,8 +55,7 @@
   font-size: 1.01em
 }
 
-.ui.mini.button{
-  float: left;
+.ui.tiny.button{
+  margin: 0 auto;
   display: flex;
-  width: 5%
 }

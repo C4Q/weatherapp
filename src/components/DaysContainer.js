@@ -21,7 +21,7 @@ class DaysContainer extends React.Component{
         <Card.Group itemsPerRow={7}>
           {days}
         </Card.Group>
-        <Button icon labelPosition='left' color='green' onClick={this.switch} className='temp'><Icon name='thermometer half'/>Switch to {this.state.Farenheit ? 'Celcius' : 'Farenheit' }</Button>
+        <Button icon labelPosition='left' color='green' onClick={this.switch} className='temp'><Icon name='thermometer half'/>Switch to {this.state.Farenheit ? 'Celsius' : 'Farenheit' }</Button>
       </div>
     )
   }
