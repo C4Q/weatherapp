@@ -27,6 +27,25 @@
   to { transform: rotate(360deg); }
 }
 
-.ui.card{
-  
+.ui.image{
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+}
+
+.ui.seven.cards>.card{
+  background-color: rgb(207,207,207)
+}
+
+.container{
+  margin: 10px auto;
+  width: 95%
+}
+
+.ui.button.temp, .ui.button.temp:active{
+  margin: 20px;
+}
+
+.ui.button.temp:hover{
+  font-size: 1.01em
 }

@@ -22,8 +22,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={'sun.png'} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Your Weather App</h1>
+          <img src={'sun.png'} className="App-logo" alt="logo" />
         </header>
         <DaysContainer days={this.state.days}/>
       </div>
