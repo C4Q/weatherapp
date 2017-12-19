@@ -1,6 +1,7 @@
 import React from 'react';
 import Day from './Day.js'
 import { Card, Button, Icon } from 'semantic-ui-react'
+import shortid from 'shortid'
 
 class DaysContainer extends React.Component{
 
@@ -13,8 +14,7 @@ class DaysContainer extends React.Component{
   }
 
   render(){
-
-    let days = this.props.days.map( (day, ind) => <Day day={day} key={ind} temp={this.state.Farenheit} />)
+    let days = this.props.days.map( (day) => <Day day={day} key={shortid.generate()} temp={this.state.Farenheit} />)
 
     return(
       <div className='container'>

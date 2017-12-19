@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 .App {
   text-align: center;
 }
@@ -8,14 +10,16 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  height: 175px;
   padding: 20px;
-  color: white;
+  background-image: url('/sky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-family: 'Lobster', cursive;
 }
 
 .App-intro {
@@ -48,4 +52,10 @@
 
 .ui.button.temp:hover{
   font-size: 1.01em
+}
+
+.ui.mini.button{
+  float: left;
+  display: flex;
+  width: 5%
 }
