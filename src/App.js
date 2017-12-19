@@ -3,6 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount(){
+    let url = `http://api.aerisapi.com/forecasts/11101?client_id=${process.env.REACT_APP_ID}&client_secret=${process.env.REACT_APP_SECRET}`
+    fetch(url)
+      .then(res => res.json())
+      .then(json => console.log(json.response[0]))
+  }
+
+  state = {}
+
   render() {
     return (
       <div className="App">
