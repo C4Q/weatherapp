@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DaysContainer from './components/DaysContainer'
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,21 +9,22 @@ class App extends Component {
     let url = `http://api.aerisapi.com/forecasts/11101?client_id=${process.env.REACT_APP_ID}&client_secret=${process.env.REACT_APP_SECRET}`
     fetch(url)
       .then(res => res.json())
-      .then(json => console.log(json.response[0]))
+      .then(json => this.setState({days: json.response[0].periods}))
   }
 
-  state = {}
+  state = {
+    days: []
+  }
 
   render() {
+    console.log(this.state.days);
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <DaysContainer days={this.state.days}/>
       </div>
     );
   }
