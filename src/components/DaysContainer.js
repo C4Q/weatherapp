@@ -1,5 +1,6 @@
 import React from 'react';
 import Day from './Day.js'
+import { Card } from 'semantic-ui-react'
 
 class DaysContainer extends React.Component{
 
@@ -12,12 +13,15 @@ class DaysContainer extends React.Component{
   }
 
   render(){
+
     let days = this.props.days.map( (day, ind) => <Day day={day} key={ind} temp={this.state.Farenheit} />)
 
     return(
       <div>
         <button onClick={this.switch}>C/F</button>
-        {days}
+        <Card.Group itemsPerRow={7}>
+          {days}
+        </Card.Group>
       </div>
     )
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import DaysContainer from './components/DaysContainer'
-import logo from './logo.svg';
+import DaysContainer from './components/DaysContainer';
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+
 
 class App extends Component {
 
@@ -21,8 +22,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={'sun.png'} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to Your Weather App</h1>
         </header>
         <DaysContainer days={this.state.days}/>
       </div>

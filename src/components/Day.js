@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from 'semantic-ui-react'
 
 class Day extends React.Component{
 
@@ -7,14 +8,18 @@ class Day extends React.Component{
     let date = new Date(this.props.day.dateTimeISO).toString().split(' ').slice(0, 4).join(' ')
 
     return(
-      <div>
-        <h4>{date}</h4>
-        <ul>
-          <li>High: {this.props.day.maxTempF}</li>
-          <li>Low: {this.props.day.minTempF}</li>
-        </ul>
-
-      </div>
+      <Card>
+        <Card.Content>
+          <Card.Header>
+            {date}
+          </Card.Header>
+          <Card.Description>
+            High: {this.props.temp ? this.props.day.maxTempF : this.props.day.maxTempC}
+            <br/>
+            Low: {this.props.temp ? this.props.day.minTempF : this.props.day.minTempC}
+          </Card.Description>
+        </Card.Content>
+      </Card>
     )
   }
 }
