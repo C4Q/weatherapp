@@ -9,6 +9,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        WeatherController.shared.fetchData()
     }
     
 

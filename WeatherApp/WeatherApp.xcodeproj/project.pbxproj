@@ -14,6 +14,7 @@
 		FDA335A720F7B5BF00837F90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335A620F7B5BF00837F90 /* MainViewController.swift */; };
 		FDA335A920F7BAB200837F90 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335A820F7BAB200837F90 /* Weather.swift */; };
 		FDA335AD20F7BE0100837F90 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335AC20F7BE0100837F90 /* NetworkController.swift */; };
+		FDA335B020F7C02A00837F90 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335AF20F7C02A00837F90 /* WeatherController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FDA335A620F7B5BF00837F90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FDA335A820F7BAB200837F90 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		FDA335AC20F7BE0100837F90 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		FDA335AF20F7C02A00837F90 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				FDA3359420F7B4D900837F90 /* AppDelegate.swift */,
-				FDA3359820F7B4D900837F90 /* Main.storyboard */,
+				FDA335AF20F7C02A00837F90 /* WeatherController.swift */,
 				FDA335AA20F7BABA00837F90 /* Model */,
 				FDA335AB20F7BABF00837F90 /* View Controller */,
 				FDA335AE20F7BE0A00837F90 /* Networking */,
 				FDA3359B20F7B4DA00837F90 /* Assets.xcassets */,
+				FDA3359820F7B4D900837F90 /* Main.storyboard */,
 				FDA3359D20F7B4DA00837F90 /* LaunchScreen.storyboard */,
 				FDA335A020F7B4DA00837F90 /* Info.plist */,
 			);
@@ -169,6 +172,7 @@
 				FDA3359520F7B4D900837F90 /* AppDelegate.swift in Sources */,
 				FDA335A920F7BAB200837F90 /* Weather.swift in Sources */,
 				FDA335A720F7B5BF00837F90 /* MainViewController.swift in Sources */,
+				FDA335B020F7C02A00837F90 /* WeatherController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
