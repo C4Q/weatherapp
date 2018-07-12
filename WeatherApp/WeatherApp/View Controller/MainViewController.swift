@@ -10,7 +10,7 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        WeatherController.shared.fetchData()
+        WeatherController.shared.forecastNYC()
     }
     
 
