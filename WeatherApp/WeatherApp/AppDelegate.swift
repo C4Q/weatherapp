@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  WeatherApp
-//
-//  Created by Ilias Basha on 7/12/18.
-//  Copyright © 2018 sohail. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

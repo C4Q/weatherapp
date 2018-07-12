@@ -60,9 +60,9 @@
 			children = (
 				FDA3359420F7B4D900837F90 /* AppDelegate.swift */,
 				FDA3359820F7B4D900837F90 /* Main.storyboard */,
-				FDA335AE20F7BE0A00837F90 /* Networking */,
 				FDA335AA20F7BABA00837F90 /* Model */,
 				FDA335AB20F7BABF00837F90 /* View Controller */,
+				FDA335AE20F7BE0A00837F90 /* Networking */,
 				FDA3359B20F7B4DA00837F90 /* Assets.xcassets */,
 				FDA3359D20F7B4DA00837F90 /* LaunchScreen.storyboard */,
 				FDA335A020F7B4DA00837F90 /* Info.plist */,
