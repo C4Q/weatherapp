@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5797D520F7E00C00C80247 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5797D420F7E00C00C80247 /* DetailViewController.swift */; };
 		FDA3359520F7B4D900837F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3359420F7B4D900837F90 /* AppDelegate.swift */; };
 		FDA3359A20F7B4D900837F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA3359820F7B4D900837F90 /* Main.storyboard */; };
 		FDA3359C20F7B4DA00837F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA3359B20F7B4DA00837F90 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD5797D420F7E00C00C80247 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FDA3359120F7B4D900837F90 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA3359420F7B4D900837F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA3359920F7B4D900837F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD5797D320F7DBEC00C80247 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDA335AF20F7C02A00837F90 /* WeatherController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		FDA3358820F7B4D900837F90 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA3359420F7B4D900837F90 /* AppDelegate.swift */,
-				FDA335AF20F7C02A00837F90 /* WeatherController.swift */,
+				FD5797D320F7DBEC00C80247 /* Model Controller */,
 				FDA335AA20F7BABA00837F90 /* Model */,
 				FDA335AB20F7BABF00837F90 /* View Controller */,
 				FDA335AE20F7BE0A00837F90 /* Networking */,
@@ -85,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA335A620F7B5BF00837F90 /* MainViewController.swift */,
+				FD5797D420F7E00C00C80247 /* DetailViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 				FDA335AD20F7BE0100837F90 /* NetworkController.swift in Sources */,
 				FDA3359520F7B4D900837F90 /* AppDelegate.swift in Sources */,
 				FDA335A920F7BAB200837F90 /* Weather.swift in Sources */,
+				FD5797D520F7E00C00C80247 /* DetailViewController.swift in Sources */,
 				FDA335A720F7B5BF00837F90 /* MainViewController.swift in Sources */,
 				FDA335B020F7C02A00837F90 /* WeatherController.swift in Sources */,
 			);
