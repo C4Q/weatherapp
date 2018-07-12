@@ -71,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				FDA3359420F7B4D900837F90 /* AppDelegate.swift */,
-				FD5797D320F7DBEC00C80247 /* Model Controller */,
 				FDA335AA20F7BABA00837F90 /* Model */,
+				FD5797D320F7DBEC00C80247 /* Model Controller */,
 				FDA335AB20F7BABF00837F90 /* View Controller */,
 				FDA335AE20F7BE0A00837F90 /* Networking */,
 				FDA3359B20F7B4DA00837F90 /* Assets.xcassets */,

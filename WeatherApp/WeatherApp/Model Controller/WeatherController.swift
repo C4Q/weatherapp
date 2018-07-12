@@ -16,8 +16,8 @@ class WeatherController {
         NetworkController.performRequest(for: apiURL, httpMethod: .get) { (data, error) in
             guard let data = data else {
                 return
-                
             }
+            
             guard let jsonDictionary = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [String:Any] else {
                 return
             }

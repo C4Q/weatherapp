@@ -13,20 +13,11 @@ struct Weather {
     let temperatureMax: Double
     
     init?(json:[String:Any]) {
-        guard let summary = json[kSummary] as? String else {
-            return nil
-        }
-        
-        guard let temperature = json[kTemperature] as? Double else {
-           return nil
-        }
-        
-        guard let temperatureMin = json[kTemperatureMin] as? Double else {
-            return nil
-        }
-        
-        guard let temperatureMax = json[kTemperatureMax] as? Double else {
-            return nil
+        guard let summary = json[kSummary] as? String,
+            let temperature = json[kTemperature] as? Double,
+            let temperatureMin = json[kTemperatureMin] as? Double,
+            let temperatureMax = json[kTemperatureMax] as? Double else {
+                return nil
         }
         
         self.summary = summary
@@ -36,6 +27,6 @@ struct Weather {
     }
     
     func farenheitToCelcius() {
-        
+        // TODO
     }
 }
