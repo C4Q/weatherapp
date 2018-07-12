@@ -12,6 +12,7 @@
 		FDA3359C20F7B4DA00837F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA3359B20F7B4DA00837F90 /* Assets.xcassets */; };
 		FDA3359F20F7B4DA00837F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA3359D20F7B4DA00837F90 /* LaunchScreen.storyboard */; };
 		FDA335A720F7B5BF00837F90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335A620F7B5BF00837F90 /* MainViewController.swift */; };
+		FDA335A920F7BAB200837F90 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA335A820F7BAB200837F90 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FDA3359E20F7B4DA00837F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA335A020F7B4DA00837F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA335A620F7B5BF00837F90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FDA335A820F7BAB200837F90 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,29 @@
 			children = (
 				FDA3359420F7B4D900837F90 /* AppDelegate.swift */,
 				FDA3359820F7B4D900837F90 /* Main.storyboard */,
-				FDA335A620F7B5BF00837F90 /* MainViewController.swift */,
+				FDA335AA20F7BABA00837F90 /* Model */,
+				FDA335AB20F7BABF00837F90 /* View Controller */,
 				FDA3359B20F7B4DA00837F90 /* Assets.xcassets */,
 				FDA3359D20F7B4DA00837F90 /* LaunchScreen.storyboard */,
 				FDA335A020F7B4DA00837F90 /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		FDA335AA20F7BABA00837F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDA335A820F7BAB200837F90 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDA335AB20F7BABF00837F90 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDA335A620F7B5BF00837F90 /* MainViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA3359520F7B4D900837F90 /* AppDelegate.swift in Sources */,
+				FDA335A920F7BAB200837F90 /* Weather.swift in Sources */,
 				FDA335A720F7B5BF00837F90 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
